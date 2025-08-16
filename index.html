@@ -3,109 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeployTest Pro</title>
+    <title>DeployTest Pro - Enhance Your Deployment</title>
     <style>
-        body, html {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
+            line-height: 1.6;
             color: #333;
-            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #34568B;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
         }
         .container {
             max-width: 1200px;
-            margin: auto;
+            margin: 0 auto;
             padding: 20px;
         }
-        header {
-            background-color: #4a90e2;
-            padding: 20px 0;
+        .hero {
             text-align: center;
-            color: white;
+            padding: 50px 20px;
+            background-color: #f4f4f4;
         }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
+        .hero h2 {
+            margin-bottom: 10px;
+            font-size: 2em;
         }
-        p {
-            font-size: 1.1em;
+        .hero p {
+            font-size: 1.2em;
         }
-        .main-content {
-            padding: 40px 0;
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #34568B;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .features {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
         .feature {
             flex: 1;
-            min-width: 300px;
+            min-width: 280px;
             margin: 10px;
             padding: 20px;
             background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            transition: transform 0.3s;
-        }
-        .feature:hover {
-            transform: translateY(-10px);
-        }
-        .cta-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 25px;
-            background-color: #4a90e2;
-            color: #fff;
-            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .cta-button:hover {
-            background-color: #357ABD;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
             text-align: center;
         }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2em;
-            }
-            .feature {
-                margin: 20px 0;
+        .feature h3 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+        }
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>DeployTest Pro</h1>
-            <p>Testing Enhanced Deployment Configuration with Vercel & Node 22.x</p>
-        </div>
+        <h1>DeployTest Pro</h1>
     </header>
-    <div class="container main-content">
-        <div class="feature">
-            <h2>Streamlined Deployments</h2>
-            <p>Effortlessly configure and deploy your applications with precision using our advanced setup.</p>
-        </div>
-        <div class="feature">
-            <h2>Reliable Testing</h2>
-            <p>Ensure your deployment configurations are solid with our robust testing features.</p>
-        </div>
-        <div class="feature">
-            <h2>Seamless Integration</h2>
-            <p>Integrate your projects seamlessly with Vercel, backed by the latest Node 22.x platform.</p>
-        </div>
+    <div class="container">
+        <section class="hero">
+            <h2>Testing Enhanced Deployment Configuration</h2>
+            <p>Streamline your deployment process with our fixed vercel.json and Node 22.x support.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <h3>Optimized Configuration</h3>
+                <p>Experience reliable and efficient deployments with our tested settings.</p>
+            </div>
+            <div class="feature">
+                <h3>Modern Node Support</h3>
+                <p>Utilize the latest Node 22.x features and improvements in your applications.</p>
+            </div>
+            <div class="feature">
+                <h3>Seamless Integration</h3>
+                <p>Deploy better with our seamless integration to your existing workflow.</p>
+            </div>
+        </section>
     </div>
-    <div class="container" style="text-align:center;">
-        <a href="#signup" class="cta-button">Get Started Now</a>
-    </div>
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 DeployTest Pro. All rights reserved.</p>
-        </div>
+    <footer class="footer">
+        <p>&copy; 2023 DeployTest Pro. All rights reserved.</p>
     </footer>
 </body>
 </html>
